@@ -1,0 +1,29 @@
+{
+
+    "data":[
+        {
+            "code":1,
+            "icon":"",
+            "title":"",
+            "description":"",
+            "type":"",
+            "timer":20,
+            "resource":"",
+            "time_to_ask":19,
+            "responses":[
+                {
+                    "icon":"",
+                    "text":"",
+                    "color":"",
+                    "is_correct":true,
+                    "extra":{
+                        "text":"",
+                        "resource":"",
+                        "icon":""
+                    }
+                }
+            ]
+        }
+    ]
+
+}
