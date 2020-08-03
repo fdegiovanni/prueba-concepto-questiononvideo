@@ -1,0 +1,151 @@
+.hide {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 10px;
+  padding: 25px;
+}
+img {
+  max-width: 100%; /* for image responsivity */
+}
+.box {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  line-height: 2;
+  padding: 20px;
+}
+
+/*VIDEO PLAYER*/
+
+#frame {
+  height: 400px;
+  width: 650px;
+  background-image: url(Frame.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#player {
+  width: 602px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  overflow: hidden;
+}
+#videoPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#controls {
+  height: 40px;
+  width: 97%;
+  padding: 10px;
+  position: absolute;
+  top: 107%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+#player:hover #controls {
+  top: 92%;
+}
+#seek-bar {
+  width: 100%;
+  height: 10px;
+  background-color: gray;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#fill {
+  height: 10px;
+  background-color: #dba74a;
+}
+#currentTime {
+  font-family: monospace;
+  font-size: 14px;
+  color: #dba74a;
+}
+#playBtn {
+  cursor: pointer;
+}
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background-color: #666;
+  height: 4px;
+  border-radius: 4px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #dba74a;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+
+#qid {
+  padding: 10px 15px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 20px;
+}
+label.btn {
+  padding: 18px 60px;
+  white-space: normal;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+}
+
+label.btn input {
+    visibility:hidden;
+}
+
+label.btn:hover {
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+label.btn-block {
+  text-align: left;
+  position: relative;
+}
+
+label .btn-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+
+label .glyphicon {
+  top: 34%;
+}

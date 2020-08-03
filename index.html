@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba concepto</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="all-questions">
+            <div class="container">
+
+            </div>
+
+        </div>
+
+        <div id="player" class="hide">
+            <div id="videoPanel">
+                <video id="myVideo" width="625" height="400" src="" autoplay></video>
+            </div>
+
+            <div id="controls">
+                <div id="seek-bar">
+                    <div id="fill"></div>
+                </div>
+
+                <table border="0">
+                    <tr>
+                        <td width="55%">
+                            <div id="currentTime">00:00 / 00:00</div>
+                        </td>
+                        <td width="30%">
+                            <img src="./assets/images/Play.png" id="playBtn" />
+                        </td>
+                        <td>
+                            <img src="./assets/images/Speaker.png" id="speaker" />
+                        </td>
+                        <td>
+                            <input type="range" id="volume" min="0" max="1" value="0.40" step="0.20" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              
+                <div class="quiz hide" id="quiz" data-toggle="buttons">
+                    
+                </div>
+
+                <div id="video-error" class="video-error">
+                    
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+            <div class="modal-footer text-muted">
+                <span id="answer"></span>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script>
+        var preguntas = new Array();
+        App.init();
+    </script>
+</body>
+
+</html>

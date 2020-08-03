@@ -1,0 +1,27 @@
+{
+  "name": "questiononvideo",
+  "version": "1.0.0",
+  "description": "Prototipo para validar proyecto de sismo games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdegiovanni/prueba-concepto-questiononvideo.git"
+  },
+  "keywords": [
+    "video",
+    "quiz",
+    "js"
+  ],
+  "author": "fdegiovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdegiovanni/prueba-concepto-questiononvideo/issues"
+  },
+  "homepage": "https://github.com/fdegiovanni/prueba-concepto-questiononvideo#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
